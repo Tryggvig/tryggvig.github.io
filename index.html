@@ -6,46 +6,180 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tryggvi Geir Magnússon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 
 <body>
   <header>
 
-
-
-
-
+    <nav id="nav">
+      <span class="container">
+        <a href="#firstPage">Tryggvi</a>
+        <a href="#secondPage">Helstu verkefni</a>
+        <a href="#thirdPage">Tæknikunnátta</a>
+        <div class="clickable">
+          <a href="https://www.facebook.com/Tryggvig" target="_blank" class="facebook">
+            <img src="images/facebook.svg" alt="facebook" />
+          </a>
+          <a href="https://github.com/tryggvig" target="_blank" class="github">
+            <img src="images/github.svg" alt="github">
+          </a>
+          <a href="mailto:tryggvi89@gmail.com" target="_blank" class="email">
+            <img src="images/email.svg" alt="email" />
+          </a>
+        </div>
+      </span>
+    </nav>
   </header>
-  <main>
-    <section>
-      Tryggvi Geir Magnússon. 28. ára, fæddur og uppalinn á Sauðárkróki en bý núna í Kópavogi. Ég elska að búa til notendavænan
-      hugbúnað sem er einfaldur í notkun en þó öflugur. Mig langar að búa til hugbúnað sem líf annarra. Útskrifaðist frá
-      Háskólanum í Reykjavík 2013 með Bcs í Tölvunarfræði. Áhugamál eru forritun, körfubolti.
+  <main id="fullpage">
+    <section class="first section">
+      <div class="container">
+        <div class="first">
+
+          <h1>Tryggvi Geir Magnússon</h1>
+          <p>28. ára, fæddur og uppalinn á Sauðárkróki en bý núna í Kópavogi.</p>
+          <p>Útskrifaðist frá Háskólanum í Reykjavík 2013 með BcS í Tölvunarfræði.</p>
+          <p>Ég hef mikinn áhuga á forritun og tækni, og í frístundum æfi ég körfubolta.</p>
+          <p>Ég er duglegur, áhugasamur, vinn vel undir álagi og er þekktur fyrir að geta farið í hvaða verkefni sem er.</p>
+          <h2>Starfsferill</h2>
+          <div class="job">
+            <div class="image">
+              <img src="images/advania.png" alt="advania" /> </div>
+            <div class="job-year">2012 -</div>
+            <div class="job-subitle">Hluti af framendateymi Veflausnadeildar Advania og einnig sem verktaki hjá stórum fyrirtækjum.</div>
+
+          </div>
+        </div>
+        <div class="second">
+          <img src="images/eg.jpg" alt="ég" height="400" />
+        </div>
+      </div>
     </section>
-    <section>
-      Hef unnið hjá Advania síðan 2012, Unnið í HTML,CSS,Javascript,.NET,Angular,Vue.JS og React í bland við Lisa CMS (einhver
-      flottur listi) - Helstu verkefni. -
-      <ul>
-        <li>Stjórnarráð.is (https://www.stjornarradid.is)(besti ríkisvefurinn 2017 (https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2017/11/30/Reykjavikurborg-og-Stjornarradid-fengu-vidurkenningu-fyrir-bestu-vefi-rikisstofnunar-og-sveitarfelaga/))</li>
-        <li>Umræða Landsbankans (https://umraedan.landsbankinn.is) Íslensku vefverðlaunin 2016 í flokknum besta efnis- og fréttaveitan
-          (https://www.landsbankinn.is/?PageId=83a336ce-0bc1-456b-bda3-62f65a95cf6e&newsid=3eb03a7f-e4d6-11e6-bf6a-0050568800ef)
-        </li>
-        <li>Samfélagsskýrsla Landsbankans (https://samfelagsskyrsla.landsbankinn.is) Besta samfélagsskýrsla ársins 2018 (https://www.landsbankinn.is/?PageId=882415a9-8fd2-4200-bdb9-24e8b7b34dc1&newsid=52961dbe-68b9-11e8-835c-0050568800ef))</li>
-        <li>Ársskýrslur Landsbankans 2014-2017 (https://arsskyrsla.landsbankinn.is)</li>
-        <li>Fjármálaleikar - spurningaleikur sem er ætlað að efna fjármálalæsi ungmenna á hverju ári (https://fjarmalaleikar.is/)</li>
-        <li>Svona gerum við - Hluti af stjórnendahóp sem er ætlað að samræma vinnubrögð allra í vefdeild Advania.</li>
-        <li>KKí.is - uppsetning og forritun</li>
-      </ul>
+    <section class="second section">
+      <div class="container">
+
+        <h1>Helstu verkefni síðustu ára</h1>
+
+        <ul class="projects">
+          <li>
+            <a href="https://www.stjornarradid.is" target="_blank" class="image" style="background-image:url('images/stjr.png');background-position:50%;">
+            </a>
+            <div class="lower">
+              <p>Stjórnarráð.is</p>
+
+              <a href="https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2017/11/30/Reykjavikurborg-og-Stjornarradid-fengu-vidurkenningu-fyrir-bestu-vefi-rikisstofnunar-og-sveitarfelaga/">Besti ríkisvefurinn 2017</a>
+            </div>
+          </li>
+          <li>
+            <a href="https://umraedan.landsbankinn.is" target="_blank" class="image" style="background-image:url('images/umraedan.png');background-position:50%;">
+            </a>
+            <div class="lower">
+              <p>Umræða Landsbankans</p>
+
+              <a href="https://www.landsbankinn.is/?PageId=83a336ce-0bc1-456b-bda3-62f65a95cf6e&newsid=3eb03a7f-e4d6-11e6-bf6a-0050568800ef">Íslensku vefverðlaunin 2016 í flokknum besta efnis- og fréttaveitan</a>
+            </div>
+          </li>
+          <li>
+            <a href="https://samfelagsskyrsla.landsbankinn.is" target="_blank" class="image" style="background-image:url('images/Samfelagsskyrsla.jpg');background-position:50%;"></a>
+            <div class="lower">
+              <p>Samfélagsskýrsla Landsbankans</p>
+              <a href="https://www.landsbankinn.is/?PageId=882415a9-8fd2-4200-bdb9-24e8b7b34dc1&newsid=52961dbe-68b9-11e8-835c-0050568800ef">Samfélagsskýrsla ársins 2018</a>
+            </div>
+          </li>
+          <li>
+            <a href="https://arsskyrsla.landsbankinn.is" target="_blank" class="image" style="background-image:url('images/arsskyrslan.png');background-position:50%;">
+            </a>
+            <div class="lower">
+              <p>Ársskýrslur Landsbankans 2014-2017</p>
+              <p>Uppsetning og forritun</p>
+            </div>
+          </li>
+          <li>
+            <a href="https://fjarmalaleikar.is/" target="_blank" class="image" style="background-image:url('images/fjarmalahreysti.png');background-position:50%;">
+            </a>
+            <div class="lower">
+              <p>Fjármálaleikar</p>
+              <p>Spurningaleikur sem er ætlað að efla fjármálalæsi ungmenna á hverju ári</p>
+            </div>
+          </li>
+
+          <li>
+            <a href="https://www.kki.is" target="_blank" class="image" style="background-image:url('images/kki.png');background-position:50%;">
+            </a>
+            <div class="lower">
+              <p>KKÍ.is</p>
+              <p>Uppsetning og forritun</p>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.advania.is" target="_blank" class="image" style="background-image:url('images/advania.jpg');background-position:50%;    background-size: 500px;
+            background-repeat: no-repeat;">
+            </a>
+            <div class="lower">
+              <p>Svona gerum við</p>
+              <p>Hluti af stjórnendahóp sem er ætlað að samræma vinnubrögð allra í vefdeild Advania.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section>
-      <a href="mailto:tryggvi89@gmail.com">Hafðu samband!</a>
+    <section class="third section">
+      <div class="container">
+        <h1>Tæknikunnátta</h1>
+
+        <ul class="logos">
+          <li class="html">
+            <img src="images/html.png" alt="html" />
+            <p>HTML</p>
+          </li>
+          <li class="css">
+            <img src="images/css.png" alt="css" />
+            <p>CSS</p>
+          </li>
+          <li class="javascript">
+            <img src="images/js.png" alt="javascript" />
+            <p>Javascript</p>
+          </li>
+          <li class="dotnet">
+            <img src="images/dotnet.png" alt="dotnet" />
+            <p>.NET</p>
+          </li>
+          <li class="angular">
+            <img src="images/angular.svg" alt="angular" />
+            <p>AngularJS</p>
+          </li>
+          <li class="png">
+            <img src="images/vue.png" alt="vuejs" />
+            <p>Vue.JS</p>
+          </li>
+          <li class="react">
+            <img src="images/react.png" alt="react" />
+            <p>React</p>
+          </li>
+          <li class="lisa">
+            <img src="images/lisa.png" alt="lisa" />
+            <p>Lisa CMS</p>
+          </li>
+        </ul>
+      </div>
+      <a href="mailto:tryggvi89@gmail.com" class="contact-button">Hafðu samband!</a>
     </section>
   </main>
-  <footer>
-    Facebook ofl
-  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.min.js"></script>
   <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
