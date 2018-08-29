@@ -92,6 +92,7 @@ section.second {
     display: flex;
     flex-wrap: wrap;
     height: 65%;
+    align-items: center;
 }
 .logos > li {
     width: 33.333%;
