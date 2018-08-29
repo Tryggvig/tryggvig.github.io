@@ -10,54 +10,60 @@
   <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
   />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css" rel="stylesheet" />
+
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 
 <body>
-  <header>
 
-    <nav id="nav">
-      <span class="container">
-        <a href="#firstPage">Tryggvi</a>
-        <a href="#secondPage">Helstu verkefni</a>
-        <a href="#thirdPage">Tæknikunnátta</a>
-        <div class="clickable">
-          <a href="https://www.facebook.com/Tryggvig" target="_blank" class="facebook">
-            <img src="images/facebook.svg" alt="facebook" />
-          </a>
-          <a href="https://github.com/tryggvig" target="_blank" class="github">
-            <img src="images/github.svg" alt="github">
-          </a>
-          <a href="mailto:tryggvi89@gmail.com" target="_blank" class="email">
-            <img src="images/email.svg" alt="email" />
-          </a>
-        </div>
-      </span>
-    </nav>
-  </header>
-  <main id="fullpage">
+  <nav id="nav">
+    <div class="profile">
+      <img src="images/eg.jpg" alt="ég" height="150s" />
+    </div>
+    <h1>Tryggvi Geir Magnússon</h1>
+    <div class="clickable">
+      <a href="https://www.facebook.com/Tryggvig" target="_blank" class="facebook">
+        <img src="images/facebook.svg" alt="facebook" />
+      </a>
+      <a href="https://github.com/tryggvig" target="_blank" class="github">
+        <img src="images/github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/tryggvi-geir-magn%C3%BAsson-51697472/" target="_blank" class="linkedin">
+        <img src="images/linkedin.svg" alt="linkedin" style="height:37px;" />
+      </a>
+      <a href="mailto:tryggvi89@gmail.com" target="_blank" class="email">
+        <img src="images/email.svg" alt="email" />
+      </a>
+    </div>
+    <p>28. ára, fæddur og uppalinn á Sauðárkróki en bý núna í Kópavogi.</p>
+    <p>Útskrifaðist frá Háskólanum í Reykjavík 2013 með BcS í Tölvunarfræði.</p>
+    <p>Ég hef mikinn áhuga á forritun og tækni, og í frístundum æfi ég körfubolta.</p>
+    <p>Ég er duglegur, áhugasamur, vinn vel undir álagi og er þekktur fyrir að geta farið í hvaða verkefni sem er.</p>
+
+    <h2>Starfsferill</h2>
+    <div class="job">
+      <div class="job-image">
+        <img src="images/advania.png" height="60" alt="advania" />
+      </div>
+      <div class="job-year">2012 -</div>
+      <div class="job-subtitle">Hluti af framendateymi Veflausnadeildar Advania og einnig sem verktaki hjá stórum fyrirtækjum.</div>
+
+    </div>
+    <div class="contact-button-container">
+      <a href="mailto:tryggvi89@gmail.com" class="contact-button">Hafa samband</a>
+    </div>
+  </nav>
+  <main>
     <section class="first section">
       <div class="container">
         <div class="first">
 
-          <h1>Tryggvi Geir Magnússon</h1>
-          <p>28. ára, fæddur og uppalinn á Sauðárkróki en bý núna í Kópavogi.</p>
-          <p>Útskrifaðist frá Háskólanum í Reykjavík 2013 með BcS í Tölvunarfræði.</p>
-          <p>Ég hef mikinn áhuga á forritun og tækni, og í frístundum æfi ég körfubolta.</p>
-          <p>Ég er duglegur, áhugasamur, vinn vel undir álagi og er þekktur fyrir að geta farið í hvaða verkefni sem er.</p>
-          <h2>Starfsferill</h2>
-          <div class="job">
-            <div class="image">
-              <img src="images/advania.png" alt="advania" /> </div>
-            <div class="job-year">2012 -</div>
-            <div class="job-subitle">Hluti af framendateymi Veflausnadeildar Advania og einnig sem verktaki hjá stórum fyrirtækjum.</div>
 
-          </div>
+
+
         </div>
         <div class="second">
-          <img src="images/eg.jpg" alt="ég" height="400" />
+
         </div>
       </div>
     </section>
@@ -125,7 +131,10 @@
             </a>
             <div class="lower">
               <p>Svona gerum við</p>
-              <p>Hluti af stjórnendahóp sem er ætlað að samræma vinnubrögð allra í vefdeild Advania.</p>
+              <p>Hluti af stjórnendahóp sem er ætlað að samræma vinnubrögð allra í vefdeild Advania. </p>
+              <p>Einnig farið yfir verkefni og farið yfir hvað hver og einn forritari þarf að passa sig á áður en byrjað er
+                á þeim.</p>
+
             </div>
           </li>
         </ul>
@@ -170,18 +179,11 @@
           </li>
         </ul>
       </div>
-      <a href="mailto:tryggvi89@gmail.com" class="contact-button">Hafðu samband!</a>
+
     </section>
   </main>
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.min.js"></script>
   <script src="main.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 
 </html>
