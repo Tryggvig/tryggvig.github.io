@@ -198,7 +198,7 @@ section.third h1 {
 }
 
 .container {
-    width: 75vw;
+    width: 74vw;
     margin: 0 auto;
     height: 100%;
     padding-right: 40px;
@@ -285,6 +285,8 @@ section.third h1 {
 }
 .advania-image {
     background-size: 500px;
+    display: block;
+    height: 250px;
 }
 
 @media (max-width: 768px) {
