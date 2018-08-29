@@ -17,8 +17,13 @@ nav {
     padding-right: 40px;
 }
 nav > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     height: 100%;
     line-height: 60px;
@@ -44,8 +49,14 @@ nav a:hover {
     text-decoration: underline;
 }
 nav .clickable {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-bottom: 30px;
 }
@@ -67,6 +78,7 @@ nav .profile img {
     padding: 12px 20px;
     background: #3a539b;
     margin-top: 30px;
+    margin-bottom: 30px;
     text-decoration: none;
     border-radius: 3px;
     font-size: 25px;
@@ -98,23 +110,42 @@ section.third h1 {
     line-height: 22px;
 }
 .first .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .first .container > div {
     width: 50%;
 }
 .first .container > div.first {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     line-height: 28px;
 }
 .first .container > div.second {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .first .container > div.second img {
@@ -126,24 +157,34 @@ section.third h1 {
     margin-bottom: 15px;
 }
 .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 65%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .logos > li {
-    width: calc(31.333% - 40px);
+    width: 21%;
     text-align: center;
     background: white;
     margin-bottom: 30px;
     padding: 20px;
-    margin-right: 1%;
+
     -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     -webkit-transform: translate3d(0, 0px, 0);
     transform: translate3d(0, 0px, 0);
 }
 .logos > li:hover {
+    -webkit-box-shadow: 0 11px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 11px 20px rgba(0, 0, 0, 0.2);
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
@@ -157,14 +198,23 @@ section.third h1 {
 }
 
 .container {
-    width: 1200px;
+    width: 75vw;
     margin: 0 auto;
     height: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     /*padding: 40px;*/
 }
 .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 60px;
 }
@@ -175,11 +225,13 @@ section.third h1 {
     background: white;
     margin-bottom: 2%;
     -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     -webkit-transform: translate3d(0, 0px, 0);
     transform: translate3d(0, 0px, 0);
 }
 .projects > li:hover {
+    -webkit-box-shadow: 0 11px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 11px 20px rgba(0, 0, 0, 0.2);
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
@@ -230,4 +282,48 @@ section.third h1 {
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     background: white;
+}
+.advania-image {
+    background-size: 500px;
+}
+
+@media (max-width: 768px) {
+    #nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    main {
+        margin-left: 0;
+    }
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .projects > li {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .logos > li {
+        width: 42%;
+    }
+    .advania-image {
+        background-size: cover;
+        height: 250px;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects > li {
+        width: 100%;
+    }
+    .logos > li {
+        width: 100%;
+    }
 }
